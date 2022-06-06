@@ -12,7 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/CSS/main.css" />
+    <link rel="stylesheet" href="CSS/style.css">
 
     <title>ViajesTPM</title>
   </head>
@@ -75,40 +75,7 @@
       </div>
     </nav>
 
-    <!-- ================================================== -->
-    <!-- SLIDER DE IMAGENES -->
-    <!-- ================================================== -->
-    <div class="contenedor-slider">
-
     
-    <div id="carousel" class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="./img/sliderV4.jpg" class="d-block w-100" alt="">
-        </div>
-        
-
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./img/sliderV2.jpg" class="d-block w-100" alt="...">
-        </div>
-
-
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./img/sliderV3.jpg" class="d-block w-100" alt="...">
-        </div>
-
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-   </div> 
-  </div>
     <!-- ================================================== -->
     <!-- INTRO -->
     <!-- ================================================== -->
@@ -118,7 +85,7 @@
       id="intro"
     >
       <h1 class="p-3 fs-2 border-top border-3">
-        Una<span class="text-primary"> agencia de viajes </span>que hace los
+        La<span class="text-primary"> agencia de viajes </span>que hace los
         sueños realidad
       </h1>
       <p class="p-3 fs-4">
@@ -129,42 +96,107 @@
     </section>
 
     <!-- ================================================== -->
-    <!-- SERVICIOS -->
+    <!-- SLIDER DE IMAGENES -->
+    <!-- ================================================== -->
+    <section id="slider">
+      <div class="contenedor-slider"> 
+      
+        <div id="carousel" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./img/sliderV4.jpg" class="d-block w-100" alt="">
+            </div>
+            
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./img/sliderV2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./img/sliderV3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- SERVICIOS figura fondo semejanza--> 
     <!-- ================================================== -->
     <section class="container-fluid">
-        <div class="row w-75 mx-auto my-5 servicio-fila">
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
-                <img src="/img/servicio-1.png" alt="playas" width="180" height=160>      
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Playas</h3>
-                    <p class="px-4">Disfruta de los mejores paraisos de nuestra mano.</p>
-                </div>
-            </div>
+      
+      <div class="row w-75 mx-auto my-5 servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
+          <img src="/img/playa.png" alt="playas" width="180" height=160>      
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Playas</h3>
+            <p class="px-4">Disfruta de los mejores paraisos de nuestra mano.</p>
+          </div>
+        </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
-                <img src="/img/servicio-2.png" alt="playas" width="180" height="160">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Crucero</h3>
-                    <p class="px-4">Relajate o diviertete como nunca abordo de los mejores cruceros</p>
-                </div>
-            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
+          <img src="/img/crucero.png" alt="Crucero" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Crucero</h3>
+            <p class="px-4">Relajate o diviertete como nunca abordo de los mejores cruceros</p>
+          </div>
+        </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
-                <img src="/img/servicio-3.png" alt="playas" width="180" height="160">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Hoteles</h3>
-                    <p class="px-4">Las mejores estadias en hoteles de cinco estrellas</p>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
-                <img src="/img/servicio-4.png" alt="playas" width="180" height="160">
-                <div>
-                    <h3 class="fs-5 mt-4 px-4 pb-1">Financiacion</h3>
-                    <p class="px-4">Amoldamos tus vacaciones al mejor precio</p>
-                </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
+            <img src="/img/hotel.png" alt="hotel" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Hoteles</h3>
+                <p class="px-4">Las mejores estadias en hoteles de cinco estrellas</p>
             </div>
         </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center my-4">
+            <img src="/img/moneda.png" alt="moneda" width="180" height="160">
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1">Financiacion</h3>
+              <p class="px-4">Amoldamos tus vacaciones al mejor precio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================== -->
+    <!-- Mas visitados -->
+    <!-- ================================================== -->
+
+    <section class="container-fluid" >
+      <div class="w-50 m-auto text-center">
+        <h4 class="p-3 fs-2 border-top border-3" >Los destinos más visitados de la temporada</h4>
+      </div>
+      <div class=" mb-5 text-center d-flex justify-content-around">
+        <div class="imgMasVisitados">
+          <a href="">
+            <img src="/img/grecia.jpg" class="" alt="Grecia">
+            <h5>Grecia</h5>
+          </a>
+        </div>
+        <div class="imgMasVisitados">
+          <a href="">
+            <img src="/img/puertoRico.jpg" class="" alt="Puerto Rico">
+            <h5>Puerto Rico</h5>
+          </a>
+        </div>
+        <div class="imgMasVisitados">
+          <a href="">
+            <img src="/img/italia.webp" class="" alt="Italia">
+            <h5>Italia</h5>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- ================================================== -->
@@ -196,7 +228,7 @@
         <div class="text-center mb-4" id="titulo-formulario">
           <div><img src="./img/support.png" alt="" class="img-fluid  logosupport"></div>
           <h2>Contactanos</h2>
-          <p class="fs-5">El viaje de tu vida a unos pocos clicks</p>
+          <p class="fs-5"> <strong>El viaje de tu vida</strong>  a unos pocos clicks</p>
         </div>
   
         <form   method="POST" data-netlify="true" action="#">     

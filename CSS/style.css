@@ -1,0 +1,90 @@
+/* GLOBALES */
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* MENU */
+
+
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* SLIDER DE IMAGENES */
+.contenedor-slider{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+.carousel-inner{
+    height: 25rem;
+
+}
+#slider{
+    background-color: #0099ff;
+    padding: 1rem;
+}
+
+/* Mas Visitados */
+
+.imgMasVisitados img{
+    width: 25rem;
+    height: 15rem;
+}
+.imgMasVisitados a{
+    text-decoration: none;
+}
+
+
+/* fondo contacto */
+#bg-contacto{
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto{
+    background-color: #0099ff;
+    min-height: 500px;
+    position: relative;
+    margin-top: 15rem
+}
+
+/* formulario */
+strong{
+    color: white;
+}
+.logosupport{
+    max-height: 13rem;
+}
+#contenedor-formulario{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#titulo-formulario{
+    color: #3f3f3f;
+}
+
+/* Media queries pantala sm */
+
+@media (max-width:768px){
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #bg-contacto{
+        top: -107px;
+    }
+}
