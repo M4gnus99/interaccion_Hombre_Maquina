@@ -121,6 +121,14 @@ strong{
     color: black;
 }
 
+/* formulario contacto */
+
+.form-contacto{
+    
+    border-radius: 30px;
+    background-color: #fb8500;
+}
+
 /* FOOTER */
 
 footer p{
