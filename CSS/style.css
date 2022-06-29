@@ -87,6 +87,22 @@ body{
     margin-top: 15rem
 }
 
+
+/* EQUIPO */
+
+.img-equipo{
+    height: 400px;
+    width: auto;
+}
+.fondo-equipo{
+    background-color: #ffb703;
+}
+.fondo-equipo span{
+    color: white;
+    font-weight: 700;
+}
+
+
 /* formulario */
 strong{
     color: white;
