@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* GLOBALES */
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+h3{
+    font-weight: 700;
+}
+
+h5{
+    font-size: 25px;
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* COLORES */
 .naranja{
@@ -59,6 +82,13 @@ body{
     padding: 1rem;
 }
 
+/* Servicios */
+
+.texto-servicios p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* Mas Visitados */
 
 .imgMasVisitados img{
@@ -72,6 +102,50 @@ body{
 .links{
     color:#023047;
 }
+
+/* Mas visitados puntos */
+.contenedorRazones{
+    background-color: #fb8500;
+    border-radius: 15px;
+}
+.contenedorRazones a{
+    text-decoration: none;
+    color: #023047;
+}
+.contenedorRazones a:hover{
+    color: white;
+}
+.img-col-1{
+    transform: rotate(-20deg);
+    margin-bottom: 50px;
+}
+.img-col-2{
+    transform: rotate(20deg);
+    margin-bottom: 50px;
+    
+}
+.img-lugares img{
+    width: 250px;
+    
+}
+.titulo-MasVisitados{
+    background-color: #023047;
+}
+
+.texto-MasVisitados h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.texto-MasVisitados h2{
+    font-size: 30px;
+}
+.texto-MasVisitados p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
 
 
 /* fondo contacto */
@@ -101,6 +175,7 @@ body{
     color: white;
     font-weight: 700;
 }
+
 
 
 /* formulario */
@@ -135,9 +210,86 @@ footer p{
     color: white;
 }
 
-/* Media queries pantala sm */
+/* Media queries */
 
+/* celular */
+@media screen and (max-width: 480px){
+
+    /* inicio */
+    .contenedor-slider{
+        width: 100%;
+    }
+    .carousel-inner{
+        padding-top: 5rem;
+    }
+    .imgMasVisitados{
+        width: 100% !important;
+    }
+    
+    .masVisitados-respo{
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    /* equipo */
+    .contenedor-equipo-sm{
+        width: 90% !important;
+    }
+
+    .equipo-sm{
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .img-equipo-sm{
+        width: 80% !important;
+        padding-bottom: 15px;
+    }
+    .texto-equipo-sm{
+        width: 100% !important;
+    }
+
+    /* Contacto */
+
+    .redes-respo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-contacto-sm{
+        text-align: center;
+    }
+    .form-contacto-respo{
+        width: 100% !important;
+    }
+
+    /* Grecia */
+    .contenedorRazones{
+        width: 100% !important;
+    }
+    .img-fluid{
+        transform: none;
+        margin-top: 30rem !important;
+    }
+    .img-fluid2{
+        transform: none;
+        margin-top: 30rem !important;
+    }
+    .col3-respo{
+        width: 33% !important;
+    }
+    .texto-MasVisitados-respo{
+        padding: 0 !important;
+    }
+    .texto-MasVisitados-respo p{
+        font-weight: 400;
+        text-align:justify;
+    }
+}
+
+/* tablet */
 @media (max-width:768px){
+
+    /* inicio */
     .servicio-fila{
         width: 100% !important;
         text-align: center;
@@ -145,5 +297,44 @@ footer p{
 
     #bg-contacto{
         top: -107px;
+    }
+
+    .imgMasVisitados{
+        width: 30%;
+    }
+
+    /* Equipo */
+
+    .contenedor-equipo-md{
+        width: 90% !important;
+    }
+
+    .texto-equipo-largo{
+        font-size: 20px !important;
+        padding: 0 !important;
+    }
+
+    /* Contacto */
+
+    .contenedor-contacto-md{
+        width: 100% !important;
+    }
+
+    /* Grecia */
+
+    .contenedorRazones{
+        width: 100% !important;
+    }
+    .img-fluid{
+        transform: none;
+        margin-top: 12rem;
+    }
+    .img-fluid2{
+        transform: none;
+        margin-top: 12rem;
+    }
+    .col3-respo{
+        width: 33% !important;
+        margin-left: 0;
     }
 }
